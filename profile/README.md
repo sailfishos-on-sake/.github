@@ -1,6 +1,6 @@
-## Hi there 👋
 
 SailfishOS on Asus Zenfone 8.
+===
 
 Install Instructions
 ===
