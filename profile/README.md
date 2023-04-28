@@ -4,11 +4,31 @@ SailfishOS on Asus Zenfone 8.
 
 Install Instructions
 ===
-//TODO
+First Lineage 18.1 needs to be installed. I have pre-build zip here https://1drv.ms/f/s!Alh0arVfv0RwiuActTaUw-9zCecxgw?e=WFf1UG
+
+You need to `fastboot boot` (not install!) TWRP  https://eu.dl.twrp.me/I006D/ to install it.
+
+You can boot Lineage to see how/if it works. 
+
+To install SailfishOS you need to boot TWRP again and:
+- format the data partition
+- install the zip file from releases TODO
 
 Build Instructions
 ===
-//TODO
+To build LineageOS-18.1 follow https://wiki.lineageos.org/devices/sake/build
+
+A pre-built zip is available here https://1drv.ms/f/s!Alh0arVfv0RwiuActTaUw-9zCecxgw?e=WFf1UG
+
+To build the Sailfish image you need to follow steps from HADK but using repos in this org or mine (including patches and boot repos).
+
+The HABUILD_SDK command are: 
+```
+. build/envsetup.sh
+breakfast sake
+TEMPORARY_DISABLE_PATH_RESTRICTIONS=true make -j$(nproc --all) hybris-hal droidmedia libui_compat_layer
+```
+(that is, it needs `libui_compat_layer`)
 
 Manifests
 ===
@@ -23,14 +43,3 @@ Manifests
         <project path="vendor/asus" name="proprietary_vendor_asus" remote="them" revision="lineage-18.1" />
 </manifest>
 ````
-
-<!--
-
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
