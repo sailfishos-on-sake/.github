@@ -4,7 +4,8 @@ SailfishOS on Asus Zenfone 8.
 
 Install Instructions
 ===
-First Lineage 18.1 needs to be installed. I have pre-build zip here https://1drv.ms/f/s!Alh0arVfv0RwiuActTaUw-9zCecxgw?e=WFf1UG
+First, Android 11 needs to be installed. This is available now on https://www.asus.com/content/android-12-beta/ if you scroll down, there's this link to [WW-ZS590KS-30.11.51.115-MR0-user_20210826-release.zip](https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS590KS/WW-ZS590KS-30.11.51.115-MR0-user_20210826-release.zip)
+Next Lineage 18.1 needs to be installed. I have pre-build zip here https://1drv.ms/f/s!Alh0arVfv0RwiuActTaUw-9zCecxgw?e=WFf1UG
 
 You need to `fastboot boot` (not install!) TWRP  https://eu.dl.twrp.me/I006D/ to install it.
 
