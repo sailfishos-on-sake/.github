@@ -15,6 +15,7 @@ You can boot Lineage to see how/if it works.
 To install SailfishOS you need to boot TWRP again and:
 - format the data partition
 - install the zip file from releases TODO
+- TODO if empty vbmeta is needed
 
 Build Instructions
 ===
