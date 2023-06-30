@@ -57,7 +57,7 @@ The HABUILD_SDK command are:
 ```
 . build/envsetup.sh
 breakfast sake
-TEMPORARY_DISABLE_PATH_RESTRICTIONS=true make -j$(nproc --all) hybris-hal droidmedia libui_compat_layer
+make -j$(nproc --all) hybris-hal droidmedia libui_compat_layer
 ```
 (that is, it needs `libui_compat_layer`)
 
@@ -66,13 +66,10 @@ TODO add hwcrypt, sailfish-fpd, to manifest?
 Manifests
 ===
 ```
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="b100dian" fetch="https://github.com/b100dian" revision="hybris-11.0" />
-        <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-18.1" />
-        <remote name="them" fetch="https://github.com/TheMuppets" revision="lineage-18.1" />
-
-        <project path="device/asus/sake" name="android_device_asus_sake" remote="lineage" />
-        <project path="kernel/asus/sm8350" name="android_kernel_asus_sm8350" remote="b100dian" />
-        <project path="vendor/asus" name="proprietary_vendor_asus" remote="them" revision="lineage-18.1" />
+    <project path="device/asus/sake" name="sailfishos-on-sake/android_device_asus_sake" revision="lineage-18.1" />
+    <project path="kernel/asus/sm8350" name="sailfishos-on-sake/android_kernel_asus_sm8350" revision="lineage-18.1" />
+    <project path="vendor/asus" name="sailfishos-on-sake/proprietary_vendor_asus" revision="lineage-18.1" />
 </manifest>
 ````
