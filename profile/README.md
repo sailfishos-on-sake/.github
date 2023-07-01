@@ -68,8 +68,8 @@ Manifests
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <project path="device/asus/sake" name="sailfishos-on-sake/android_device_asus_sake" revision="lineage-18.1" />
-    <project path="kernel/asus/sm8350" name="sailfishos-on-sake/android_kernel_asus_sm8350" revision="lineage-18.1" />
+    <project path="device/asus/sake" name="sailfishos-on-sake/android_device_asus_sake" revision="hybris-18.1" />
+    <project path="kernel/asus/sm8350" name="sailfishos-on-sake/android_kernel_asus_sm8350" revision="hybris-18.1" />
     <project path="vendor/asus" name="sailfishos-on-sake/proprietary_vendor_asus" revision="lineage-18.1" />
 </manifest>
 ````
