@@ -61,7 +61,7 @@ make -j$(nproc --all) hybris-hal droidmedia libui_compat_layer libsfplugin_ccode
 ```
 (that is, it needs `libui_compat_layer` for the GUI to work, and one of the hybris-patches here acts on ccodec to make video recording work)
 
-For community encription you need to build also `hwcrypt` (TODO build fix for A11).
+For community encription you need to build also `hwcrypt` ([build fix for A11](https://github.com/b100dian/hwcrypt/tree/hybris-18.1)).
 
 Manifests
 ===
