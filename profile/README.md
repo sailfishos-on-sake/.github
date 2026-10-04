@@ -57,6 +57,8 @@ The HABUILD_SDK command are:
 ```
 . build/envsetup.sh
 breakfast sake
+# only the first time
+repopick -f 363318
 make -j$(nproc --all) hybris-hal droidmedia libui_compat_layer libsfplugin_ccodec
 ```
 (that is, it needs `libui_compat_layer` for the GUI to work, and one of the hybris-patches here acts on ccodec to make video recording work)
